@@ -1,0 +1,16 @@
+{
+  "name": "prometheus-discord-deobfuscator-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Discord bot wrapper for the Prometheus Deobfuscator",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1"
+  }
+}

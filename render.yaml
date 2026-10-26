@@ -1,0 +1,18 @@
+services:
+  - type: worker
+    name: prometheus-discord-deobfuscator
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: COMMAND_PREFIX
+        value: "."
+      - key: MAX_FILE_BYTES
+        value: "7340032"
+      - key: MAX_OUTPUT_BYTES
+        value: "7340032"
+      - key: ALLOWED_USER_IDS
+        sync: false
